@@ -1,9 +1,10 @@
 #banana {
-    cursor: pointer;
-    max-width: 80%;
+    display: block;
+    width: 80%;
+    max-width: 460px;
     height: auto;
+    margin: 0 auto;
 }
-
 html {
   touch-action: manipulation;
 }
