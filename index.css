@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -17,6 +19,7 @@ body {
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
+    max-width: 100vw;
 }
 
 #banana {
@@ -31,8 +34,7 @@ body {
 
 main, header, footer {
     min-width: 0;
-    flex-shrink: 0;            /* prevent shrinking in flex column */
-    width: 100%;               /* ensure full width of container */
+    width: 100%;
 }
 
 main {
@@ -50,4 +52,8 @@ h2 {
 header {
     font-size: clamp(28px, 6vw, 50px);
     font-weight: 900;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
