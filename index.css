@@ -1,10 +1,12 @@
 #banana {
     display: block;
-    width: 80%;
+    width: 80vw;
     max-width: 460px;
     height: auto;
     margin: 0 auto;
+    min-width: 0;
 }
+
 html {
   touch-action: manipulation;
 }
@@ -12,12 +14,14 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 16px;     
     text-align: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -31,4 +35,8 @@ h2 {
 header {
     font-size: clamp(28px, 6vw, 50px);
     font-weight: 900;
+}
+
+main, header, footer {
+    min-width: 0;
 }
