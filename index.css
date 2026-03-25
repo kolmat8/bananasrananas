@@ -31,3 +31,20 @@ main, header, footer {
 main {
     margin: 16px 0;
 }
+
+html {
+  touch-action: manipulation;
+}
+
+h2 {
+    flex: 1;
+}
+
+#clickCounter {
+    font-weight: 400;    
+}
+
+header {
+    font-size: clamp(28px, 6vw, 50px);
+    font-weight: 900;
+}
