@@ -6,7 +6,7 @@ let bananaClicked = 0;
 
 function trog() {
     if (bananaClicked == 67) {
-        sceam.play()
+        scream.play()
     }
 }
 
