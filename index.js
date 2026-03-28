@@ -14,6 +14,10 @@ banana.addEventListener("click", () => {
     bananaClicked++;
     clickCounter.innerHTML = "you have clicked the banana " + bananaClicked + " times";
     if (bananaClicked == 67) {
-        setTimeout(trog, 6.7)
+        scream.play().then(() => {
+            scream.pause();
+            scream.currentTime = 0;
+        }).catch(() => {});
+        setTimeout(trog, 6700)
     }
 });
