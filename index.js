@@ -22,8 +22,8 @@ function trog() {
 
 banana.addEventListener("click", () => {
     bananaClicked++;
-    scream.pause();
-    scream.currentTime = 0;
+    click.pause();
+    click.currentTime = 0;
     click.play()
     clickCounter.innerHTML = "you have clicked the banana " + bananaClicked + " times";
     if (bananaClicked == 67) {
